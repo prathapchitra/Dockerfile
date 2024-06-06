@@ -1,0 +1,11 @@
+apiversion: v1
+kind: service
+metadata: 
+  name: my-service
+spec:
+ selector: 
+   app: my-app
+  ports:
+    - protocal: tcp
+      port: 80
+      targetport: 9376 

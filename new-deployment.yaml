@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 3
+  selector:  # Corrected 'selectors' to 'selector'
+    matchLabels:  # Corrected 'matchlables' to 'matchLabels'
+      app: my-app
+  template:
+    metadata:
+      labels:  # Corrected 'lables' to 'labels'
+        app: my-app
+    spec:
+      containers:
+      - name: my-container  # Corrected 'name: my-containers' to 'name: my-container'
+        image: my-image  # Corrected 'image: my image' to 'image: my-image'
+        env:  # Moved 'env' inside the container definition and fixed indentation
+        - name: DB_PASSWORD
+          value: prathap

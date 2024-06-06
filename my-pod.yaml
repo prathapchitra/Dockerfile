@@ -1,0 +1,10 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: my-app
+  lables: 
+  app: my-app
+spec:
+ containers:
+ - name: my-containers
+   image: my image
